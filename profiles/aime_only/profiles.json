@@ -1,0 +1,2824 @@
+{
+  "schema_version": "person_tts_requirement_profiles_v1",
+  "generation": {
+    "method": "difficulty_stratified_maximin",
+    "description": "Profiles sampled uniformly in empirical quantile space of calibration anchors, stratified into equal-frequency difficulty bins by feasibility ratio (fraction of calibration grid points satisfying all constraints), with greedy maximin space-filling selection within each stratum.",
+    "parameters": {
+      "seed": 20260901,
+      "total_count": 100,
+      "n_strata": 5,
+      "candidate_pool_size": 5000,
+      "quantile_range": [
+        0.03,
+        0.97
+      ],
+      "difficulty_metric": "feasibility_ratio",
+      "within_stratum_selection": "maximin_euclidean_normalized"
+    },
+    "anchors_path": "profiles/aime_only/anchors.json",
+    "anchors_sha256": "a030669909e14afc3b833a32518aec39c0d77a725a69e255f857309533769243"
+  },
+  "profiles": [
+    {
+      "id": "profile_0000",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.4571181277468366
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 92.33242091929941
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 10788277.188056678
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.000794,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0001",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.7701666666666667
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 499.88863781287046
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 19399145.750501446
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.000794,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0002",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.747296077833532
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3649.5476017312385
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 690211.7681982153
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.000794,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0003",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.7658333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1027.320880705669
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 2705021.591601326
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.001587,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0004",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.18031155879320163
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 23.372070353478193
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 13586906.58290537
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.001587,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0005",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.2613333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3244.796535864687
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 23897.747222188074
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.001587,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0006",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.45270744212709957
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5006.773987951241
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 110334.06612118745
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.002381,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0007",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.3688722578790243
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 61.23640774569563
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 24203577.710228637
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.003175,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0008",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.7627653639723921
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 593.7766466774561
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 12081697.141516712
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.003175,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0009",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.14783333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 157.84216719267104
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 14156.694729348532
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.003968,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0010",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.03962525640209175
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3278.099465390401
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 3491.3088889063465
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.004762,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0011",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.4975
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 214.1989844682592
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 1093133.7172709357
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.004762,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0012",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.1741182399883472
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5177.7718170899825
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 17195.864895761995
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.004762,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0013",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.2492127814088721
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 40.5151296146214
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 6025419.955348464
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.004762,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0014",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.40472268044250337
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2083.82529060058
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 109650.74910091978
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.007937,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0015",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.03266666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 9.493400163948536
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 6987580.839407774
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.009524,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0016",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.7897417311206762
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3336.8009045137537
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 9729263.472312417
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.012698,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0017",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.11193388082582564
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1744.484641039474
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 23425.669444168852
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.012698,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0018",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.629453703414148
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2100.7680970999336
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 548367.7491627098
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.012698,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0019",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.7980898645059235
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3285.797153625256
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 20736752.44237375
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.013492,
+        "difficulty_stratum": 0
+      }
+    },
+    {
+      "id": "profile_0020",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.05666666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 12.53984646126628
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 10417157.049120061
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.014286,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0021",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.6368371546153628
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 762.5089059291736
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 20786790.017887346
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.016667,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0022",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.016666666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 6.182514949391286
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 20585025.84596223
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.019048,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0023",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.4387403234342263
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3992.089559626279
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 274708.30928666634
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.020635,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0024",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.7360978924699351
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1508.9516684802425
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 2688577.4453412443
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.022222,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0025",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.5438333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1358.386552050019
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 391534.93053494825
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.022222,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0026",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.391
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2146.4383384495377
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 191214.55499972685
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.02619,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0027",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.14503419487474384
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 57.50447873693894
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 190792.61444417186
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.026984,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0028",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.4437595098192672
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 315.86031165380854
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 17406619.028626516
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.026984,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0029",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.3428333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5179.1829560840215
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 147489.25078671702
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.027778,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0030",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.327
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 686.7719128720032
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 193139.41521458075
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.030159,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0031",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.001666666666666667
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5181.3651669257915
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 4632.645547517607
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.031746,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0032",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.0016666666666666668
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5.47107215235014
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 4383489.53000874
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.033333,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0033",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.6083333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3449.9074302042545
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 964439.8873899563
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.034921,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0034",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.027666666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2945.6468218111177
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 12963.679603756309
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.04127,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0035",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.47193141020011337
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 487.5215195757445
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 4207197.785405251
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.04127,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0036",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.7310467383513625
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1712.5367286645533
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 10351869.33162317
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.042063,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0037",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.2403194151081425
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3347.737882178041
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 108979.27034305365
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.042063,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0038",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.058333333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1496.920999758097
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 25831.194075105297
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.045238,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0039",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.33399010512316046
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 216.28874357996614
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 11981071.64834484
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.046032,
+        "difficulty_stratum": 1
+      }
+    },
+    {
+      "id": "profile_0040",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.33216666666666667
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 390.3717538657444
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 648057.48794437
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.048413,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0041",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.5508087564618842
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5139.423282098551
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 879989.4638890664
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.05,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0042",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.6083333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1042.0961790329823
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 19467172.93746786
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.050794,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0043",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.6914432223379914
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2446.631961381313
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 3214156.242603462
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.051587,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0044",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.4216996258631279
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 382.4568855047474
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 8701479.66082954
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.055556,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0045",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.766
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5180.20691013666
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 19451437.477700863
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.057143,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0046",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.001666666666666667
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 6.772570283425479
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 16511791.852486473
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.061905,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0047",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.5505123845936635
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1176.3656130601848
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 3738288.919971171
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.07381,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0048",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.2659223788816936
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2328.6045072443117
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 274754.4887352832
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.084127,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0049",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.6181764855602423
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1883.896474709374
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 13108255.775188819
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.084127,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0050",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.4265
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 638.0773010274263
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 21339284.076280452
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.085714,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0051",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.47329499173436607
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 818.1150427342775
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 15171278.82111185
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.085714,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0052",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.14872139264586867
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3749.0469383939844
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 117795.90060458795
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.09127,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0053",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.14978759241470407
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5178.512367999809
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 132324.9599601148
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.093651,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0054",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.016666666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2739.98312308423
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 23425.669444168852
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.101587,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0055",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.16135822826668855
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1131.308695830543
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 187360.86076255568
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.103968,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0056",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.4621666666666667
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3224.464378432741
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 1446505.7560071603
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.106349,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0057",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.2658333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 298.89520692771185
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 15905535.442927798
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.112698,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0058",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.10583333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 57.66051913631648
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 8775417.820107127
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.115873,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0059",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.03266666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 40.487211304374895
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 149304.5607139979
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.120635,
+        "difficulty_stratum": 2
+      }
+    },
+    {
+      "id": "profile_0060",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.24919438248551823
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2263.5881916106428
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 456559.79372255335
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.125397,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0061",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.011333333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 11.050444269897689
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 20730759.950434435
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.129365,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0062",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.5098023929669113
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1788.81960491334
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 5200144.174251592
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.133333,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0063",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.1535
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 167.35444982839073
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 22578666.13835889
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.138095,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0064",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.4265
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2654.5507131182067
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 2099408.323225878
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.149206,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0065",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.2613333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 557.7401018671387
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 1797905.1324676708
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.151587,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0066",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.016666666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 12.758764192461967
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 6121950.665749734
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.152381,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0067",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.24706561792288306
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5172.320983715431
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 578702.6675697968
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.154762,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0068",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.556974235278671
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3121.2742253991887
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 12064114.670295907
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.154762,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0069",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.42490439089878973
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1224.7763895137396
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 17376348.242177434
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.172222,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0070",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.0819604437035389
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 182.78656322259718
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 842307.4691959191
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.176984,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0071",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.271872609447307
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 637.3774846843822
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 8715182.680159276
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.184921,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0072",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.1945
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3787.9122804640756
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 603811.5101928754
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.195238,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0073",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.35236045029803353
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1482.1850836704043
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 5102910.728516956
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.203175,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0074",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.011333333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1659.0154135951748
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 56029.98888916906
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.219048,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0075",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.024064742353639097
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 29.33675803389875
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 12093060.451886121
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.219841,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0076",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.016833333333333332
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3254.628516914217
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 75471.77156381516
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.223016,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0077",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.3695
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3884.371929708857
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 4044067.845072195
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.229365,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0078",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.46216666666666667
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 4107.259838411767
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 20871823.989229627
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.248413,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0079",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.024666666666666667
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5179.160155160005
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 116810.77174610403
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.25,
+        "difficulty_stratum": 3
+      }
+    },
+    {
+      "id": "profile_0080",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.3699455674497437
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2098.666048083573
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 24324017.91224831
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.257937,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0081",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.014833333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 26.497453086078167
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 1764742.8369930363
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.270635,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0082",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.14162269095072832
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 382.32704957917247
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 10239904.885858987
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.275397,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0083",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.2658333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1142.62300810647
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 15733684.579927428
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.279365,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0084",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.1355
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1364.7717501292768
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 777368.8176778344
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.280952,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0085",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.109
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 347.0764152641715
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 24016096.98034566
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.284921,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0086",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.24719735662137904
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1223.1808391433963
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 7036563.592278972
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.286508,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0087",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.20366666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5135.280644201755
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 1861538.3245188524
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.3,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0088",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.21583333333333332
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3132.0746091155224
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 2705715.695833275
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.311111,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0089",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.30083333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3775.556744365006
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 13235469.381735876
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.348413,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0090",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.032783511551627315
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5180.462633642077
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 343727.8732536721
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.353175,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0091",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.21245765911329356
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3343.2281760517108
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 23337784.0777013
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.430952,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0092",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.20775378202169437
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 5170.193577030975
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 13481331.81763612
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.436508,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0093",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.011333333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 2724.3472667550623
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 376178.87090948084
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.471429,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0094",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.13875161830922444
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1933.7245668813173
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 14497473.055410288
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.495238,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0095",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.10059292076435204
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3775.5426173556016
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 3483635.475130689
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.512698,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0096",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.011333333333333334
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 493.4492476078768
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 14967314.344405696
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.619048,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0097",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.01533333333333333
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 1646.322773028893
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 7781229.994731351
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.756349,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0098",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.020166666666666666
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 4188.745585767815
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 10909285.439808466
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.781746,
+        "difficulty_stratum": 4
+      }
+    },
+    {
+      "id": "profile_0099",
+      "weight": 1.0,
+      "constraints": [
+        {
+          "metric": "accuracy",
+          "aggregation": "mean",
+          "op": ">=",
+          "value": 0.018
+        },
+        {
+          "metric": "latency_s",
+          "aggregation": "batch",
+          "op": "<=",
+          "value": 3714.0101990945286
+        },
+        {
+          "metric": "weighted_compute",
+          "aggregation": "mean",
+          "op": "<=",
+          "value": 24395005.064491123
+        }
+      ],
+      "metadata": {
+        "feasibility_ratio": 0.819841,
+        "difficulty_stratum": 4
+      }
+    }
+  ],
+  "profiles_sha256": "66b7f332d6e2aad603bc8eeb1a6771bfaabfd15846ae76997dd5d7b844cc613a"
+}

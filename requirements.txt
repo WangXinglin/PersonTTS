@@ -1,0 +1,12 @@
+# Evaluation and replay. This is all that is needed to score a controller;
+# no GPU, no inference framework, no API access.
+sympy==1.14.0
+latex2sympy2==1.9.1
+antlr4-python3-runtime==4.7.2   # must match the latex2sympy2/sympy pair above
+regex==2025.9.18
+word2number==1.1
+numpy==2.1.0
+
+# Discovery only. Skip this if you are re-scoring released controllers rather
+# than re-running the search, which is the only stage that calls an LLM.
+claude-agent-sdk==0.1.58

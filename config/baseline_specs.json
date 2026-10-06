@@ -1,0 +1,77 @@
+{
+  "schema_version": "person_tts_baseline_specs_v1",
+  "baselines": [
+    {
+      "id": "asc",
+      "algorithm": "asc_configured_4d",
+      "policy_config": {
+        "resources": {
+          "model_id": "Qwen3-4B",
+          "max_width": 32,
+          "checkpoints_per_stage": 4,
+          "max_refine_rounds": 1
+        },
+        "asc": {
+          "confidence_threshold": 0.95,
+          "min_samples": 2
+        },
+        "esc": {
+          "window_size": 5
+        },
+        "parallel_probe": {
+          "warmup_checkpoints": 10,
+          "stable_window": 14,
+          "prune_patience": 8
+        }
+      }
+    },
+    {
+      "id": "esc",
+      "algorithm": "esc_configured_4d",
+      "policy_config": {
+        "resources": {
+          "model_id": "Qwen3-4B",
+          "max_width": 32,
+          "checkpoints_per_stage": 4,
+          "max_refine_rounds": 1
+        },
+        "asc": {
+          "confidence_threshold": 0.95,
+          "min_samples": 2
+        },
+        "esc": {
+          "window_size": 4
+        },
+        "parallel_probe": {
+          "warmup_checkpoints": 10,
+          "stable_window": 14,
+          "prune_patience": 8
+        }
+      }
+    },
+    {
+      "id": "parallel_probe",
+      "algorithm": "parallel_probe_sr",
+      "policy_config": {
+        "resources": {
+          "model_id": "Qwen3-4B",
+          "max_width": 16,
+          "checkpoints_per_stage": 8,
+          "max_refine_rounds": 1
+        },
+        "asc": {
+          "confidence_threshold": 0.95,
+          "min_samples": 2
+        },
+        "esc": {
+          "window_size": 5
+        },
+        "parallel_probe": {
+          "warmup_checkpoints": 2,
+          "stable_window": 3,
+          "prune_patience": 2
+        }
+      }
+    }
+  ]
+}

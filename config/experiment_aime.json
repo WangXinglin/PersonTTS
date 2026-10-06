@@ -1,0 +1,89 @@
+{
+  "schema_version": "person_tts_autoresearch_config_v1",
+  "source_output_root": "../outputs",
+  "private_cache_root": "private_cache",
+  "discovery_datasets": [
+    "AIME_24",
+    "AIME_25"
+  ],
+  "heldout_datasets": [
+    "AIME_26"
+  ],
+  "expected_problem_count_by_split": {
+    "discovery": 60,
+    "heldout": 30
+  },
+  "models": [
+    {
+      "name": "Qwen3-0.6B",
+      "weight": 1.0
+    },
+    {
+      "name": "Qwen3-1.7B",
+      "weight": 2.8333333333
+    },
+    {
+      "name": "Qwen3-4B",
+      "weight": 6.6666666667
+    },
+    {
+      "name": "Qwen3-8B",
+      "weight": 13.3333333333
+    },
+    {
+      "name": "Qwen3-14B",
+      "weight": 23.3333333333
+    },
+    {
+      "name": "Qwen3-32B",
+      "weight": 53.3333333333
+    }
+  ],
+  "beta_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "shuffle_seeds": 100,
+  "discovery_rounds": 5,
+  "round_start_mode": "autotts_reset",
+  "evaluation_workers": 32,
+  "candidate_policy_config": {
+    "resources": {
+      "model_id": "Qwen3-4B",
+      "max_width": 40,
+      "checkpoints_per_stage": 66,
+      "max_refine_rounds": 0
+    },
+    "asc": {
+      "confidence_threshold": 0.95,
+      "min_samples": 2
+    }
+  },
+  "policy_question_text_visible": false,
+  "allow_cross_model_branch_switch": false,
+  "refine_requires_stage_terminal": true,
+  "claude_backend": "claude_agent_sdk",
+  "claude_allowed_tools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Edit",
+    "Write",
+    "Bash"
+  ],
+  "claude_forbidden_paths": [
+    "../outputs",
+    "private_cache",
+    "artifacts/private",
+    "AIME_26"
+  ]
+}
